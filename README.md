@@ -61,7 +61,7 @@ This will return:
 
 #### Print existing commands and folders:
 ```ruby
-puts.ARD.list_folders
+puts ARD.list_folders
 ```
 returns any existing single commands or folders in ARD
 
