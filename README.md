@@ -1,5 +1,9 @@
 # ARD
 
+
+
+> **Note:** This has not been fully tested since macOS 10.15, but was working as of Ventura 13.4.1
+
 A gem to help create and organize commands in Apple Remote Desktop
 
 ## Installation
@@ -25,7 +29,7 @@ The gem is available as open source under the terms of the [MIT License](http://
 ## Usage
 
 
-#### This script assume a couple of things:
+#### This script assumes a couple of things:
 * you have Apple Remote Installed on the local machine
 * you run this script in the user account that uses Apple Remote Desktop
 * for clarity and to avoid name collisions, all folders and commands you create should have unique names otherwise you can receive errors when trying to delete or move folders or commands
@@ -111,14 +115,14 @@ arguments are (folder_name, orignialcommandname, newcommandname)
  ```ruby
  ARD.rename_command("folder0", "command2", "command1")
  ```
- ---
+---
 
  #### Create a visual space by using ----
  arguments is physical location you want to create the spacer
  ```ruby
  ARD.create_spacer(1)
  ```
- ---
+---
 
 #### Rename an existing folder:
 arguments are (oldname, newname)
